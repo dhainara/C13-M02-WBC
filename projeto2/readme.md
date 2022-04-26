@@ -1,4 +1,4 @@
-# Pokedex
+# pokemondex
 ##  Descrição
 Esse projeto foi realizado com fins de aprendizado no cruso de FullStack da BluedTech no ano de 2022 - módulo 2.
 

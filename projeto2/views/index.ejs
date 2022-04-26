@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +12,58 @@
 <body>
     <%- include('./partials/header.ejs') %>
 
-    <main>
-        <!--Card começa aqui-->
-        <section id="card_pokemon">
+        <main>
+            <!--Card começa aqui-->
+            <section id="card_pokemon">
+            
+                <% pokemon.forEach(element=> { %>
+                    <a href="detalhes/<%=element.id%>">
+                        <article class="card">
+                            <div class="identificacao">
+                                <div>
+                                    <p>Nº <%= element.numero %>
+                                    </p>
+                                </div>
+                                <div>
+                                    <%= element.nome %>
+                                </div>
+                            </div>
+            
+                            <div class="imagem">
+                                <img src="/<%=element.imagem%>" alt="<%=element.nome%>">
+                            </div>
+            
+                            <div class="outros">
+                                <div>
+                                    <%= element.tipo %>
+                                </div>
+                                <div>
+                                    <%= element.descricao %>
+                                </div>
+                                <div>
+                                    <%= element.altura %>
+                                </div>
+                                <div>
+                                    <%= element.peso %>
+                                </div>
+                                <div>
+                                    <%= element.categoria %>
+                                </div>
+                                <div>
+                                    <%= element.habilidade %>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <% }) %>
 
-            <% pokemon.forEach(element=> { %>
-                <a href="/<%= element.id %>">
-                    <article class="card">
-                        <div class="identificacao">
-                            <div><p>Nº <%= element.numero %></p></div>
-                            <div><%= element.nome %></div>
-                        </div>
+            </section>
+            <!--Card termina aqui-->
 
-                        <div class="imagem">
-                            <img src="<%=element.imagem%>" alt="<%=element.nome%>">
-                        </div>
 
-                        <div class="outros">
-                            <div><%= element.tipo %></div>
-                            <div><%= element.descricao %></div>
-                            <div><%= element.altura %></div>
-                            <div><%= element.peso %></div>
-                            <div><%= element.categoria %></div>
-                            <div><%= element.habilidade %></div>
-                        </div>
-                    </article>
-                </a>
-            <% }) %>
-                
-        </section><!--Card termina aqui-->
+        </main>
 
-        
-    </main>
-
-    <%- include('./partials/footer.ejs') %> 
+        <%- include('./partials/footer.ejs') %>
 </body>
+
 </html>

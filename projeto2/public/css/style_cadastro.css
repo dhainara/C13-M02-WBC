@@ -27,11 +27,11 @@ header {
 
 #header ul {
     display: flex;
-    gap: 5px;
     list-style: none;
     height: auto;
     width: auto;
     align-items: center;
+    gap: 20px;
 }
 
 #header ul a {
@@ -51,62 +51,55 @@ header {
 
 main {
     min-height: 80%;
+    padding: 20px;
 }
 
-section#card_pokemon {
+form {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+fieldset{
+    border: none;
+}
+
+form fieldset{
+    flex-direction: row;
+    display: flex;
+    padding-bottom: 25px;
     gap: 15px;
 }
 
-section a {
-    text-decoration: none;
-    color: currentColor;
-
+form input {
+    border:none;
+    height:30px;
+    width: 75%;
 }
 
-article.card {
-    background-color: whitesmoke;
+form label {
+    display: flex;
+    height: 30px;
+    width: 25%;
+}
+
+form#form_in {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    min-height: 600px;
-    width: 300px;
     text-align: center;
+    width: 500px;
     border-radius: 25px;
     padding: 10px 10px;
 }
 
-article.card div.imagem {
-    height: 60%;
-    border: 2px solid black;
-}
-
-article.card img {
-    height: 100%;
-}
-
-article.card div.identificacao {
-    display: flex;
-    flex-direction: column;
-    height: 5%;
-}
-
-article.card div.outros {
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-}
-
-
-article.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
-}
 
 footer {
-
     height: 7%;
     font-size: 4vh;
     background-color: #A41000;

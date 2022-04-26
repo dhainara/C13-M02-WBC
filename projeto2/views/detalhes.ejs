@@ -6,14 +6,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style_detalhes.css" rel="stylesheet">
     <title>Detalhes</title>
 </head>
 
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <%= poke[0].nome %>
+        <section id="card_pokemon">
+                <article class="card">
+                    <div>
+                        <p>Numero: <%= poke.numero %></p>
+                        <p>Nome: <%= poke.nome %></p>
+                    </div>
+                    <div>
+                        <img src="/<%=poke.imagem%>" alt="<%=element.nome%>">
+                    </div>
+
+                    <div>
+                        <p><%= poke.tipo %></p>
+                        <p><%= poke.descricao %></p>
+                        <p><%= poke.altura %></p>
+                        <p><%= poke.peso %></p>
+                        <p><%= poke.categoria %></p>
+                        <p><%= poke.habilidade %></p>
+                    </div>
+                
+                </article>
+        </section>
+        
     </main>
     
     <%- include('./partials/footer.ejs') %>
