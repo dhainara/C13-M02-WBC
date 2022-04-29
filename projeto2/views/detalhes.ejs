@@ -13,28 +13,71 @@
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <section id="card_pokemon">
-                <article class="card">
-                    <div>
-                        <p>Numero: <%= poke.numero %></p>
-                        <p>Nome: <%= poke.nome %></p>
-                    </div>
-                    <div>
-                        <img src="/<%=poke.imagem%>" alt="<%=element.nome%>">
-                    </div>
-
-                    <div>
-                        <p><%= poke.tipo %></p>
-                        <p><%= poke.descricao %></p>
-                        <p><%= poke.altura %></p>
-                        <p><%= poke.peso %></p>
-                        <p><%= poke.categoria %></p>
-                        <p><%= poke.habilidade %></p>
-                    </div>
-                
-                </article>
+        <section>
+<h1>Detalhes</h1>
         </section>
         
+        <section>
+            
+            <table>
+                <tbody>
+
+                        <td colspan="2" class="imagem"><img  src='/<%=pokemon.imagem%>'>
+                    
+                    <tr>
+                        <td class="dhai">Nome:</td>
+                        <td>
+                            <%= pokemon.nome%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Número:</td>
+                        <td>
+                            <%= pokemon.numero %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Tipo:</td>
+                        <td>
+                            <%= pokemon.tipo%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Descrição:</td>
+                        <td>
+                            <%= pokemon.descricao%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Altura:</td>
+                        <td>
+                            <%= pokemon.altura%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Peso:</td>
+                        <td>
+                            <%= pokemon.peso%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Categoria:</td>
+                        <td>
+                            <%= pokemon.categoria%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dhai">Habilidade:</td>
+                        <td>
+                            <%= pokemon.habilidade%>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </section>
     </main>
     
     <%- include('./partials/footer.ejs') %>

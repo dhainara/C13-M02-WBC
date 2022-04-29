@@ -13,66 +13,65 @@
     <%- include('./partials/header.ejs') %>
 
     <main>
+        <section>
+            <h1>Cadastro</h1>
+        </section>
+
+        <section>
+            <fieldset>
+
+                <form>
+                    <fieldset>
+                        <label for="numero">Numero:</label>
+                        <input type="text" name="numero" maxlength="30" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" maxlength="30" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="tipo">Tipo:</label>
+                        <input type="text" name="tipo" maxlength="30" required>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <label for="imagem">Imagem:</label>
+                        <input type="link" name="imagem" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" name="descricao" maxlength="130" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="altura">Altura:</label>
+                        <input type="text" name="altura" maxlength="30" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="peso">Peso:</label>
+                        <input type="text" name="peso" maxlength="30" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" name="categoria" maxlength="30" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="habilidade">Habilidade:</label>
+                        <input type="text" name="habilidade" maxlength="30" required>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </fieldset>
+        </section>
         
-        <fieldset>
-            <form id="form_in">
-
-                <legend>Cadastro</legend>
-
-                <fieldset>
-                    <label for="numero">Numero</label>
-                    <input type="text" name="numero">
-                </fieldset>
-
-                <fieldset>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome">
-                </fieldset>
-
-                <fieldset>
-                    <label for="tipo">Tipo</label>
-                    <input type="text" name="tipo">
-                </fieldset>
-
-
-                <fieldset>
-                    <label for="imagem">Imagem</label>
-                    <input type="link" name="imagem">
-                </fieldset>
-
-                <fieldset>
-                    <label for="descricao">Descrição</label>
-                    <input type="text" name="descricao">
-                </fieldset>
-
-                <fieldset>
-                    <label for="altura">Altura</label>
-                    <input type="text" name="altura">
-                </fieldset>
-
-                <fieldset>
-                    <label for="peso">Peso</label>
-                    <input type="text" name="peso">
-                </fieldset>
-
-                <fieldset>
-                    <label for="categoria">Categoria</label>
-                    <input type="text" name="categoria">
-                </fieldset>
-
-                <fieldset>
-                    <label for="habilidade">Habilidade</label>
-                    <input type="text" name="habilidade">
-                </fieldset>
-
-                <button type="submit">Enviar</button>
-                
-            </form>
-
-        
-            
-
-        </fieldset>
     </main>
 
     <%- include('./partials/footer.ejs') %>
